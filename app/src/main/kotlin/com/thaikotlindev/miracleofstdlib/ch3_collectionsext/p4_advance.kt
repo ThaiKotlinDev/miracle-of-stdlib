@@ -22,7 +22,7 @@ private val productList = listOf(
 	Product("6", "product6", "description6", 600.0, categoryList[2])
 )
 
-fun advance_collection() {
+fun advanceCollection() {
 	productList.filter { it.price > 200.0 } // 3,4,6
 	productList.filterNot { it.price == 200.0 } // 1,3,4,6
 

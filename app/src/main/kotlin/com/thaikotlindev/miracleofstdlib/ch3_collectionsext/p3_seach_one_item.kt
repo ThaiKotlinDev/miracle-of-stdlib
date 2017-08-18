@@ -13,7 +13,7 @@ private val productList = listOf(
 	Product("6", "product6", "description6", 600.0, categoryList[0])
 )
 
-fun search_one() {
+fun searchOne() {
 	productList.first()                             // Product 1
 	productList.first { it.name == "product20" }    // Throw NoSuchElementException
 	productList.firstOrNull { it.price == 200.0 }   // Product 2
